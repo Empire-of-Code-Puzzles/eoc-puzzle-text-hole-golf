@@ -11,26 +11,83 @@ Each test is dict with
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": ["How are you doing?",
+                      "I'm fine. OK.",
+                      "Lorem Ipsum?",
+                      "Of course!!!",
+                      "1234567890",
+                      "0        0",
+                      "1234567890",
+                      "Fine! good buy!"],
+            "answer": 3,
+            "explanation": [[1, 9], [2, 5], [3, 2]],
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        }
+            "input": ["WoW",
+                      "A A",
+                      "WoW"],
+            "answer": 1,
+            "explanation": [[1, 1]]
+        },
+        {
+            "input": ["HELLO",
+                      "O O O",
+                      "NIGHT",
+                      "O O O",
+                      "IDDQD"],
+            "answer": 4,
+            "explanation": [[1, 1], [1, 3], [3, 1], [3, 3]]
+        },
+        {
+            "input": ["HELLO",
+                      "O   O",
+                      "NIGHT",
+                      "O   O",
+                      "IDDQD"],
+            "answer": 0,
+            "explanation": []
+        },
+
+
+
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": ["How are you doing?",
+                      "I'm fine. OK.",
+                      "Lorem Ipsum?",
+                      "Of course!!!",
+                      "1234567890",
+                      "0        0",
+                      "1234567890",
+                      "Fine! good buy!"],
+            "answer": 3,
+            "explanation": [[1, 9], [2, 5], [3, 2]],
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
+            "input": ["WoW",
+                      "A A",
+                      "WoW"],
+            "answer": 1,
+            "explanation": [[1, 1]]
+        },
+        {
+            "input": ["HELLO",
+                      "O O O",
+                      "NIGHT",
+                      "O O O",
+                      "IDDQD"],
+            "answer": 4,
+            "explanation": [[1, 1], [1, 3], [3, 1], [3, 3]]
+        },
+        {
+            "input": ["HELLO",
+                      "O   O",
+                      "NIGHT",
+                      "O   O",
+                      "IDDQD"],
+            "answer": 0,
+            "explanation": []
+        },
     ]
 }

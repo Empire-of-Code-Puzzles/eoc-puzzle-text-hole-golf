@@ -1,44 +1,81 @@
-<p>
-    <i>( Describe task in general )</i>
+<p class="story">
+    "Usually I re-read a book until holes  appear on the pages. This means that I did read the book."<br>
+    - anonymous author.
 </p>
 
 <p>
-    Sum two passed ints
-</p>
-
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
+    If you want to play a golf on book pages, then as first you need to find holes.
+    Let's do it.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    You are given a text as a sequence of strings.
+    If we will place them in column in the order how they are given up to down,
+    then we get an 2D array, but with various length rows.
+    A hole is a single whitespace which are surrounded by letters or digits or punctuation symbols
+    - up, down, left, right and both diagonals.
+    Two or more spaces are not a hole.
+    All "outer" characters consider as whitespaces, so a space on the can not be a hole.
+    Your goal is count how many holes in the given text.
+</p>
+<p>
+    Let's look an example:
+<pre style="font-weight: bold">
+How are you doing?
+I'm fine. OK.
+Lorem Ipsum?
+Of course!!!
+1234567890
+0        0
+1234567890
+Fine! good buy!
+</pre>
+<br>Here we can find 3 (three) holes: before "OK"; between "Lorem" and "Ipsum"; inside "Of course!!!".
 </p>
 
+
+<p>
+    In this mission the main goal to make your code as short as possible.
+    The shorter your code, the more points you earn.
+    Your score for this mission is dynamic and directly related to the length of your code.
+    For reference, scoring is based on the number of characters used.
+    350 characters is the maximum allowable and it will earn you zero points.
+    For each character less than 350, you earn 1 point. For example for 300 character long code earns you 50 points.
+</p>
+
+<p>
+    <strong>Input: </strong> A text as a list of strings (unicode for py2).
+</p>
+
+<p>
+    <strong>Output: </strong> The number of single holes as an integer.
+</p>
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
+
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+golf(["How are you doing?",
+      "I'm fine. OK.",
+      "Lorem Ipsum?",
+      "Of course!!!",
+      "1234567890",
+      "0        0",
+      "1234567890",
+      "Fine! good buy!"]) == 3
     </pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    Let's check your creativity and python tricks in works with various data structures.
 </p>
 
 <p>
-    <strong>Precondition:</strong>
-    <i>Constraints for Input</i>
+    <strong>Precondition:</strong><br>
+    0 &lt; len(text) &le; 20<br>
+    all(0 &lt; len(row) &le; 20 for row in text)<br>
 </p>

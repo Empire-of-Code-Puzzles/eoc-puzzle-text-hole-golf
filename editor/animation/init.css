@@ -13,16 +13,6 @@
     overflow: auto;
 }
 
-.animation-success {
-    background: linear-gradient(to bottom, #ffac54 0%,#ff8d2c 100%);
-}
-
-.animation-success div {
-    background-repeat: no-repeat;
-    height: 60px;
-    width: 390px;
-    background-image: url("http://www.checkio.org/static/imgv3/task_solved.png");
-}
 
 .center-exp {
     margin-left:auto;

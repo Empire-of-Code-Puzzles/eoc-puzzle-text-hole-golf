@@ -1,0 +1,109 @@
+<p class="story">
+  「普段私はページに穴が空くまで本を読みこなす。私にとって、これは徹底的にその本を読んだことを意味する。」<br>
+  - 匿名の作家
+</p>
+<!-- <p class="story">
+    "Usually I read and re-read a book until I wear holes in the pages. To me, this means that I have thoroughly read
+    that book."<br>
+    - anonymous author.
+</p> -->
+
+<p>
+  もしあなたが本のページでゴルフをプレイしたかったら、最初にプロットホールを探す必要があります。やってみましょう。
+
+</p>
+<!-- <p>
+    If you want to play golf on the pages of a book, then first you need to find the plot holes. Let's do it.
+
+</p> -->
+
+<p>
+  あなたは文字列の配列としてのテキストの塊が与えられます。私達がそれらの行を与えられた通りに配置すると、
+  様々な列の長さの2次元配列を得ます。
+  プロットホールは文字や数字や句読点で(上下左右と斜めに)囲まれた単一の空白です。
+  2つ以上のスペースはプロットホールにはなりません。
+  空白のすべての「外側」の文字に空白があったらプロットホールにはなりません。
+  あなたのゴールは与えられたテキストにいくつのプロットホールがあるか数えることです。
+</p>
+<!-- <p>
+    You are given a chunk of text as a sequence of strings. If we place them in columns in the order of how they are
+    given, then we get an 2D array with various row lengths. A plot hole is a single white-space surrounded by letters,
+    digits or punctuation symbols - up, down, left, right and diagonally. Two or more spaces do not constitute a plot
+    hole. All "outer" characters a consider white-spaces, so a space on the outside cannot be considered a plot hole.
+    Your goal is count the number of plot holes in the given text.
+</p> -->
+<p>
+  例を見てみましょう。
+<pre style="font-weight: bold">
+How are you doing?
+I'm fine. OK.
+Lorem Ipsum?
+Of course!!!
+1234567890
+0        0
+1234567890
+Fine! good buy!
+</pre>
+<br>
+ここには3つのプロットホールがあります。"OK"の前、"Lorem"と"Ipsum"の間、"Of course!!!"の中。
+</p>
+<!-- Here we can find three plot holes: before "OK"; between "Lorem" and "Ipsum"; inside "Of course!!!".
+</p> -->
+
+
+<p>
+  このミッションでは主なゴールはあなたのコードを出来る限り短くすることです。
+  あなたのコードが短ければ、より多くのポイントを獲得することができます。
+  このミッションでのあなたのスコアは動的であなたのコードの長さに直結しています。
+  参考までにスコアは使われた文字の数に基づいています。
+  350文字が許容される最大文字数でこの時は0点です。
+  350文字から1文字減るごとに1ポイント獲得することができます。
+  例えば300文字の長さのコードでは50ポイント獲得することになります。
+</p>
+<!-- <p>
+    In this mission the main goal to make your code as short as possible. The shorter your code, the more points you
+    earn. Your score for this mission is dynamic and directly related to the length of your code. For reference, scoring
+    is based on the number of characters used. 350 characters is the maximum allowable and it will earn you zero points.
+    For each character less than 350, you earn 1 point. For example for 300 character long code earns you 50 points.
+</p> -->
+
+<p>
+    <strong>入力 </strong> テキストが文字列(py2 では unicode)のリストとして与えられる
+</p>
+
+<p>
+    <strong>出力 </strong> 単一のホールの数を整数として返す
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>例</strong>
+    </p>
+    <pre class="brush: python">
+golf(["How are you doing?",
+      "I'm fine. OK.",
+      "Lorem Ipsum?",
+      "Of course!!!",
+      "1234567890",
+      "0        0",
+      "1234567890",
+      "Fine! good buy!"]) == 3
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>どうやって使われるか </strong>
+    あなたの創造性と色々なデータ構造を扱う時のPythonのトリックの知識をチェックしてみましょう
+</p>
+<!-- <p class="for_info_only">
+    <strong>How it is used: </strong>
+    Let's check your creativity and knowledge of python tricks when working with a variety of data structures.
+</p> -->
+
+<p>
+    <strong>事前条件</strong><br>
+    0 &lt; len(text) &le; 20<br>
+    all(0 &lt; len(row) &le; 20 for row in text)<br>
+</p>

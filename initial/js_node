@@ -1,0 +1,21 @@
+"use strict";
+function golf(text) {
+    return 0;
+}
+//
+//if (!global.is_checking) {
+//    // These "asserts" using only for self-checking and not necessary for auto-testing
+//    var assert = require("assert");
+//    assert.equal(golf(["How are you doing?",
+//                       "I'm fine. OK.",
+//                       "Lorem Ipsum?",
+//                       "Of course!!!",
+//                       "1234567890",
+//                       "0        0",
+//                       "1234567890",
+//                       "Fine! good buy!"]), 3, "1st example");
+//    assert.equal(golf(["WoW",
+//                       "A A",
+//                       "WoW"]), 3, "2nd example");
+//    console.log("Earn cool rewards by using the 'Check' button!");
+//}
